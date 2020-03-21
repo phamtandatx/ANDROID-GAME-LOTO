@@ -91,7 +91,7 @@ public class MainActivity extends AppCompatActivity {
                 if(arrayNumber.size()==0)
                 {
                     Log.d("BBB","khong con gi de random");
-                    Toast.makeText(MainActivity.this, "Hết số rồi mấy ba ơi", Toast.LENGTH_LONG).show();
+                    Toast.makeText(MainActivity.this, "Hết số để RANDOM", Toast.LENGTH_LONG).show();
                     return;
                 }
                 //chay ham Random
