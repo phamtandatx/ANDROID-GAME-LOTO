@@ -37,9 +37,9 @@ public class MainActivity extends AppCompatActivity {
         ArrayList<Integer> arrayNumber = new ArrayList<>();
 
         // Thêm dữ liệu
-        arrayNumber.add(10); // index = 0
-        arrayNumber.add(9); // index = 1
-        arrayNumber.add(8); // index = 2
+//        arrayNumber.add(10); // index = 0
+//        arrayNumber.add(9); // index = 1
+//        arrayNumber.add(8); // index = 2
 
         // Lay kích thước mảng
 //        Log.d("BBB",String.valueOf(arrayNumber.size()));
@@ -65,22 +65,11 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(MainActivity.this, "Bạn nhập thiếu thông tin", Toast.LENGTH_SHORT).show();
                     return;
                 }
-
                 mSmin = Integer.parseInt(mTextmin);
                 mSmax = Integer.parseInt(mTextmax);
-
-                // Viet dieu kien theo if else
-//                if (smin > smax){
-//                    smax = smin + 1;
-//                }
-                // Viet dieu kien theo toan tu 3 ngoi
-
                 mSmax = mSmin > mSmax ? mSmin + 1 : mSmax;
-
                 mEdtSomax.setText(String.valueOf(mSmax));
-
                 mRandom = new Random();
-
                 mValue = mRandom.nextInt(mSmax - mSmin + 1) + mSmin;
 
 //                mTvValue += mValue + " - ";
