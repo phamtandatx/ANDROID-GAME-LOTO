@@ -101,7 +101,15 @@ public class MainActivity extends AppCompatActivity {
                 //remove gia tri da xuat ra
                 arrayNumber.remove(i);
                 //hien thi ra man hinh
-                mTvKetqua.append(mValue + " - ");
+                if(arrayNumber.size()==0)
+                {
+                    mTvKetqua.append(mValue + "");
+                }
+                else
+                {
+                    mTvKetqua.append(mValue + " - ");
+                }
+
 
             }
         });
